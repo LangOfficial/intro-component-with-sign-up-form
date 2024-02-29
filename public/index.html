@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <title>Intro component with sign-up form</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body
+    class="flex flex-col items-center justify-center bg-primary-red bg-mobile px-5 py-20 font-primary text-white halfxl:flex-row halfxl:bg-desktop"
+  >
+    <section class="mb-14 text-center halfxl:text-start halfxl:mr-12">
+      <h2 class="mb-8 text-3xl font-bold700 halfxl:font-bold700 halfxl:text-5xl halfxl:max-w-xl leading">
+        Learn to code by watching others
+      </h2>
+      <p class="text-lg font-bold500 leading-8 halfxl:max-w-xl">
+        See how experienced developers solve problems in real-time. Watching
+        scripted tutorials is great, but understanding how developers think is
+        invaluable.
+      </p>
+    </section>
+    <section>
+      <article class="mb-6">
+        <div
+          class="mb-8 flex justify-center rounded-xl bg-accent-blue py-6 text-center border-b-8 border-[#e56262] halfxl:py-4"
+        >
+          <div class="max-w-60 halfxl:max-w-full">
+            <span class="font-bold700">Try it free 7 days</span> then $20/mo.
+            thereafter
+          </div>
+        </div>
+      </article>
+
+      <article class="rounded-xl bg-white p-5 py-6 border-b-8 border-[#e56262] halfxl:p-8 halfxl:py-9">
+        <ul class="flex flex-col gap-4">
+          <li>
+            <div class="relative">
+              <input
+              type="text"
+              class="w-full rounded-md border-2 border-neutral-400 border-opacity-60 bg-none p-4 text-neutral-darkBlue placeholder:font-bold500 placeholder:text-neutral-darkBlue placeholder:text-opacity-85 input-email"
+              placeholder="First Name"/>
+              <img class="hidden absolute right-4 top-1/2 transform -translate-y-1/2 w-6" src="images/icon-error.svg" alt="" id="error-first">
+            </div>
+            <p class="text-primary-red italic text-xs text-end mt-2 hidden" id="warning-first">First name cannot be empty</p>
+          </li>
+          <li>
+            <div class="relative">
+              <input
+                type="text"
+                class="w-full rounded-md border-2 border-neutral-400 border-opacity-60 bg-none p-4 text-neutral-darkBlue placeholder:font-bold500 placeholder:text-neutral-darkBlue placeholder:text-opacity-85 input-email"
+                placeholder="Last Name"
+              />
+              <img class="hidden absolute right-4 top-1/2 transform -translate-y-1/2 w-6 error" src="images/icon-error.svg" alt="" id="error-last">
+            </div>
+            <p class="text-primary-red italic text-xs text-end mt-2 hidden" id="warning-last">Last name cannot be empty</p>
+          </li>
+          <li>
+            <div class="relative">
+              <input
+                type="text"
+                class="w-full rounded-md border-2 border-neutral-400 border-opacity-60 bg-none p-4 text-neutral-darkBlue placeholder:font-bold500 placeholder:text-neutral-darkBlue placeholder:text-opacity-85 input-email"
+                placeholder="Email Address"
+              />
+              <img class="hidden absolute right-4 top-1/2 transform -translate-y-1/2 w-6" src="images/icon-error.svg" alt="" id="error-email">
+            </div>  
+            <p class="text-primary-red italic text-xs text-end mt-2 hidden" id="warning-email">Looks like this isn't a valid email</p>
+          </li>
+          <li>
+            <div class="relative">
+              <input
+              type="text"
+              class="w-full rounded-md border-2 border-neutral-400 border-opacity-60 bg-none p-4 text-neutral-darkBlue placeholder:font-bold500 placeholder:text-neutral-darkBlue placeholder:text-opacity-85 input-email"
+              placeholder="Password"
+            />
+              <img class="hidden absolute right-4 top-1/2 transform -translate-y-1/2 w-6" src="images/icon-error.svg" id="error-password">
+            </div>
+            <p class="text-primary-red italic text-xs text-end mt-2 hidden" id="warning-password">Password cannot be empty</p>
+            
+          </li>
+        </ul>
+        <button
+          class="mb-4 mt-4 w-full rounded border-b-4 border-green-700 border-opacity-60 bg-primary-green py-5 text-xl font-bold500 uppercase hover:bg-opacity-80 transition ease-out duration-300" id="free-trial-btn"
+        >
+          Claim your free trial
+        </button>
+
+        <p class="text-center text-sm text-neutral-grayishBlue">
+          By clicking the button, you agreeing to our
+          <span class="text-primary-red font-bold700">Terms and Services</span>
+        </p>
+      </article>
+    </section>
+  </body>
+<script src="scripts/script.js"></script>
+</html>
